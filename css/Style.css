@@ -58,7 +58,31 @@ header {
 }
 
 /*titulo*/
-
+@media (max-width:950px){
+    .titulo{
+        font-size: 100px;
+        text-decoration: underline;
+        
+    }
+    .titulo2{
+        font-size: 35px;
+        transform: translateY(-10px);
+    }
+}
+@media (max-width:619px){
+    .titulo{
+        font-size: 90px;
+    }
+}
+@media (max-width:559px){
+    .titulo{
+        font-size: 50px;
+    }
+    .titulo2{
+        font-size: 25px;
+        transform: translateY(-35px);
+    }
+}
 header>h1 {
     text-align: center;
     line-height: 65px;
@@ -77,7 +101,25 @@ header>h1 {
     background-clip: text;
     filter: brightness(250%);
 }
-
+/*section>p*/
+@media (max-width: 400px) {
+    .normal {
+        font-size: 21px;
+        font-weight: 300;
+    }
+}
+@media (min-width: 400px) and (max-width: 600px){
+    .normal {
+        font-size: 21px;
+        font-weight: 300;
+    }
+}
+@media (min-width: 600px) and (max-width: 1700px){
+    .normal {
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
 
 header>p {
     background-color: rgba(0, 0, 0, 0);
@@ -109,7 +151,28 @@ body>#escopo {
 section {
     padding-top: 30px;
 }
-
+@media(max-width:500px)
+{
+    .h1{
+        font-size: 30px;
+        transform: scaleY(200%);
+    }
+    .h2{
+        font-size: 20px;
+        transform: scaleY(150%);
+    }
+}
+@media(min-width:500px) and (max-width:700px)
+{
+    .h1{
+        font-size: 40px;
+        transform: scaleY(200%);
+    }
+    .h2{
+        font-size: 25px;
+        transform: scaleY(200%);
+    }
+}
 section>h1 {
     font-size: 50px;
     transform: scaleY(150%);
