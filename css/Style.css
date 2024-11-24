@@ -10,7 +10,7 @@
 /*animação foto 2049*/
 @keyframes anima {
     0% {
-        background-position: right top
+        background-position: right top;
     }
 
     50% {
@@ -18,15 +18,37 @@
     }
 
     100% {
-        background-position: left bottom
+        background-position: left bottom;
     }
 
     50% {
-        background-position: top center
+        background-position: top center;
     }
 
     100% {
         background-position: right top;
+    }
+}
+/*Segunda animação do titulo. Usar quando for desktop*/
+@keyframes anima2 {
+    0% {
+        filter: brightness(80%);
+    }
+
+    50% {
+        filter: brightness(250%);
+    }
+
+    100% {
+        filter: brightness(500%);
+    }
+
+    50% {
+        filter: brightness(250%);
+    }
+
+    100% {
+        filter: brightness(80%);
     }
 }
 
@@ -58,15 +80,28 @@ header {
 }
 
 /*titulo*/
-@media (max-width:950px){
+
+@media (min-width:1000px) or (orientation: landscape){
     .titulo{
-        font-size: 100px;
-        text-decoration: underline;
-        
+        animation: anima2 2s infinite;
+    }
+}
+@media (min-width:950px){
+    .titulo{
+        font-size: 150px;
     }
     .titulo2{
         font-size: 35px;
         transform: translateY(-10px);
+    }
+}
+@media (max-width:950px){
+    .titulo{
+        font-size: 100px;
+    }
+    .titulo2{
+        font-size: 35px;
+        transform: translateY(-25px);
     }
 }
 @media (max-width:619px){
@@ -86,7 +121,7 @@ header {
 header>h1 {
     text-align: center;
     line-height: 65px;
-    font-size: 130px;
+    font-size: 150px;
     font-family: var(--Blade), var(--fontF2);
     font-variant: small-caps;
     color: var(--branco);
@@ -128,7 +163,7 @@ header>p {
     font-family: var(--Kan), var(--fontF2);
     font-weight: 200;
     text-align: center;
-    transform: translateY(-20px);
+    transform: translateY(-10px);
     font-size: 35px;
 }
 
@@ -152,21 +187,21 @@ body>#escopo {
 section {
     padding-top: 30px;
 }
-@media(max-width:500px)
+@media(min-width:300px) and (max-width:500px)
 {
     .h1{
-        font-size: 30px;
+        font-size: 23px;
         transform: scaleY(200%);
     }
     .h2{
-        font-size: 20px;
+        font-size: 18px;
         transform: scaleY(150%);
     }
 }
 @media(min-width:500px) and (max-width:700px)
 {
     .h1{
-        font-size: 40px;
+        font-size: 34px;
         transform: scaleY(200%);
     }
     .h2{
