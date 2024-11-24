@@ -1,2 +1,2 @@
 # DesafioPessoal
- Projeto Blade Runner. Longe do Curso em Video
+> CLIQUE <a href="https://saulo-rep.github.io/Cordel/" target="_blank"> AQUI </a> PARA VISUALIZAR O PROJETO/Site
