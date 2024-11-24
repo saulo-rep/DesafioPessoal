@@ -7,7 +7,7 @@
     font-weight: 900;
     font-style: italic;
 }
-
+/*animação foto 2049*/
 @keyframes anima {
     0% {
         background-position: right top
@@ -27,6 +27,24 @@
 
     100% {
         background-position: right top
+    }
+}
+/*animação do brilho do titulo*/
+@keyframes brilho {
+    0%{
+        filter: brightness(500%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(0%);
+    }
+    50%{
+        filter: brightness(150%);
+    }
+    100%{
+        filter: brightness(500%);
     }
 }
 
@@ -91,7 +109,6 @@ header>h1 {
     font-variant: small-caps;
     color: var(--branco);
     margin: auto;
-
     background-image: url(../imagens/Locação.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -99,7 +116,7 @@ header>h1 {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    filter: brightness(250%);
+    animation: brilho 5.5s infinite;
 }
 /*section>p*/
 @media (max-width: 400px) {
@@ -213,6 +230,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img2 {
@@ -226,6 +244,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img3 {
@@ -239,6 +258,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img4 {
@@ -252,6 +272,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img5 {
@@ -265,6 +286,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img6 {
@@ -278,6 +300,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img7 {
@@ -291,6 +314,7 @@ h2 {
     transition: 0.5s ease-in-out;
     border-radius: 5px;
     filter: grayscale(100%);
+    zoom: 150%;
 }
 
 #img8 {
