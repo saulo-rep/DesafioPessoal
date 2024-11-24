@@ -61,6 +61,8 @@ header {
 @media (max-width:950px){
     .titulo{
         font-size: 100px;
+        text-decoration: underline;
+        
     }
     .titulo2{
         font-size: 35px;
@@ -100,7 +102,6 @@ header>h1 {
     background-clip: text;
     animation: anima 30s infinite;
 }
-
 /*section>p*/
 @media (max-width: 400px) {
     .normal {
