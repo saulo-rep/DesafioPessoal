@@ -1,0 +1,334 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Blade";
+    src: url("../fonts/EdgeRacerItalic-R9dPe.otf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@keyframes anima {
+    0% {
+        background-position: right top
+    }
+
+    50% {
+        background-position: left top;
+    }
+
+    100% {
+        background-position: left bottom
+    }
+
+    50% {
+        background-position: top center
+    }
+
+    100% {
+        background-position: right top
+    }
+}
+
+:root {
+    --branco: white;
+    --preto: black;
+
+    --fontF: Arial, Helvetica, sans-serif;
+    --fontF2: 'Times New Roman', Times, serif;
+    --Blade: "Blade";
+    --Kan: "Kanit";
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/*Headers*/
+header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+/*titulo*/
+@media (max-width:950px){
+    .titulo{
+        font-size: 100px;
+        text-decoration: underline;
+        
+    }
+    .titulo2{
+        font-size: 35px;
+        transform: translateY(-10px);
+    }
+}
+@media (max-width:619px){
+    .titulo{
+        font-size: 90px;
+    }
+}
+@media (max-width:559px){
+    .titulo{
+        font-size: 50px;
+    }
+    .titulo2{
+        font-size: 25px;
+        transform: translateY(-35px);
+    }
+}
+header>h1 {
+    text-align: center;
+    line-height: 65px;
+    font-size: 130px;
+    font-family: var(--Blade), var(--fontF2);
+    font-variant: small-caps;
+    color: var(--branco);
+    margin: auto;
+
+    background-image: url(../imagens/Locação.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -80px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    filter: brightness(250%);
+}
+/*section>p*/
+@media (max-width: 400px) {
+    .normal {
+        font-size: 21px;
+        font-weight: 300;
+    }
+}
+@media (min-width: 400px) and (max-width: 600px){
+    .normal {
+        font-size: 21px;
+        font-weight: 300;
+    }
+}
+@media (min-width: 600px) and (max-width: 1700px){
+    .normal {
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
+
+header>p {
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--branco);
+    font-family: var(--Kan), var(--fontF2);
+    font-weight: 200;
+    text-align: center;
+    transform: translateY(-20px);
+    font-size: 35px;
+}
+
+body>#escopo {
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+}
+
+#escopo>article {
+    border-radius: 5px;
+    max-width: 100vh;
+    margin: auto;
+    text-align: justify;
+    outline-style: dotted;
+    outline-offset: 4px;
+    outline-width: 3px;
+    font-size: larger;
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    padding-top: 30px;
+}
+@media(max-width:500px)
+{
+    .h1{
+        font-size: 30px;
+        transform: scaleY(200%);
+    }
+    .h2{
+        font-size: 20px;
+        transform: scaleY(150%);
+    }
+}
+@media(min-width:500px) and (max-width:700px)
+{
+    .h1{
+        font-size: 40px;
+        transform: scaleY(200%);
+    }
+    .h2{
+        font-size: 25px;
+        transform: scaleY(200%);
+    }
+}
+section>h1 {
+    font-size: 50px;
+    transform: scaleY(150%);
+    font-family: var(--Kan), var(--fontF);
+}
+
+section>p {
+    text-indent: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    font-family: var(--Kan), var(--fontF);
+    font-weight: 500;
+
+}
+
+section>h2 {
+    padding-top: 40px;
+    font-size: 30px;
+    font-family: var(--Kan), var(--fontF);
+    font-weight: 900;
+    transform: scaleY(150%);
+}
+
+section>p,
+h1,
+h2 {
+    padding: 0px 10px 20px 10px;
+}
+
+#img1 {
+    background-image: url("../imagens/Poster.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img2 {
+    background-image: url("../imagens/Cena_de_BR.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img3 {
+    background-image: url("../imagens/Elenco\ BR.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img4 {
+    background-image: url("../imagens/Filmagens.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img5 {
+    background-image: url("../imagens/Efeitos.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img6 {
+    background-image: url("../imagens/Musica.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img7 {
+    background-image: url("../imagens/Recepção.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+
+#img8 {
+    background-image: url("../imagens/2049.jpg");
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: auto;
+    filter: grayscale(100%);
+    background-position: center top;
+    zoom: 150%;
+    animation: anima 20s infinite;
+}
+
+/*Imagens*/
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover,
+#img5:hover,
+#img6:hover,
+#img7:hover {
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    filter: brightness(150%);
+    filter: grayscale(100%);
+}
+
+footer {
+    background-color: black;
+    color: var(--branco);
+    text-align: center;
+    font-size: 20px;
+    font-family: var(--Kan), var(--fontF);
+    font-weight: 200;
+    padding: 20px 0px 20px 0px;
+    margin-top: 30px;
+}
