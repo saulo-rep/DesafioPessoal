@@ -102,9 +102,6 @@ header>h1 {
     background-clip: text;
     animation: anima 30s infinite;
 }
-header>h1{
-    
-}
 /*section>p*/
 @media (max-width: 400px) {
     .normal {
