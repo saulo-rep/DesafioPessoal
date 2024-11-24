@@ -26,25 +26,7 @@
     }
 
     100% {
-        background-position: right top
-    }
-}
-/*animação do brilho do titulo*/
-@keyframes brilho {
-    0%{
-        filter: brightness(500%);
-    }
-    50%{
-        filter: brightness(150%);
-    }
-    100%{
-        filter: brightness(0%);
-    }
-    50%{
-        filter: brightness(150%);
-    }
-    100%{
-        filter: brightness(500%);
+        background-position: right top;
     }
 }
 
@@ -113,11 +95,15 @@ header>h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: -20px -80px;
-
+    background-position: left center;
+    background-attachment: fixed;
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: brilho 5.5s infinite;
+    animation: anima 30s infinite;
+}
+header>h1{
+    
 }
 /*section>p*/
 @media (max-width: 400px) {
@@ -232,6 +218,7 @@ h2 {
     border-radius: 5px;
     filter: grayscale(100%);
     zoom: 150%;
+    animation: anima 20s infinite;
 }
 
 #img2 {
