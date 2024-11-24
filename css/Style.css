@@ -83,7 +83,7 @@ header {
 
 @media (min-width:1000px) or (orientation: landscape){
     .titulo{
-        animation: anima2 2s infinite;
+        animation: anima2 25s infinite;
     }
 }
 @media (min-width:950px){
